@@ -1,12 +1,14 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";
+import { StyleSheet, Text, View, Image, Button } from "react-native";
+import ButtonWrapper from "./components/ButtonWrapper";
 
 export default class App extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.header}>Header</Text>
+      <View style={container}>
+        <Text style={header}>Nimbus</Text>
         <Image source={require("./img/dog.jpg")} style={{ width: 375, height: 320 }} />
+        <ButtonWrapper />
       </View>
     );
   }
@@ -21,6 +23,8 @@ const styles = StyleSheet.create({
   },
   header: {
     fontSize: 30,
-    marginBottom: 30
+    marginBottom: 20
   }
 });
+
+const { container, header } = styles;
