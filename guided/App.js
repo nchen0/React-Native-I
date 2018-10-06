@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, Image, Button } from "react-native";
 import ButtonWrapper from "./components/ButtonWrapper";
+import CommentWrapper from "./components/CommentWrapper";
 
 export default class App extends React.Component {
   render() {
@@ -9,6 +10,7 @@ export default class App extends React.Component {
         <Text style={header}>Nimbus</Text>
         <Image source={require("./img/dog.jpg")} style={{ width: 375, height: 320 }} />
         <ButtonWrapper />
+        <CommentWrapper />
       </View>
     );
   }
